@@ -22,6 +22,6 @@ Installing Pelican
 ------------------
 I chose to use Ubuntu 14.04 because it (sadly) was the most up-to-date OS my VPS provider had in their catalogue.  It should be trivial to port these commands to CentOS or Fedora (s/apt-get/yum/).
 
-    #!bash
+    :::bash
     apt-get install python-pip python-dev
 
