@@ -24,4 +24,21 @@ I chose to use Ubuntu 14.04 because it (sadly) was the most up-to-date OS my VPS
 
     :::bash
     apt-get install python-pip python-dev
+    pip install pelican virtualenv Markdown typography
+    
+Once the above commands have been run, from a software standpoint, Pelican has been installed.  This doesn't make it useful yet though, so lets configure a pelican site (lets just assume you're site is called "blog"):
+
+    :::bash
+    mkdir -p /opt/blog
+    virtualenv /opt/blog
+    mkdir /opt/blog/site
+    cd /opt/blog/site
+    pelican-quickstart
+    
+To recap, we installed Pelican globally, but setup a virtual environment in which the blog will be configured.  If you are hosting multiple blogs on the same host, there are semantics to be debated, but unless you are planning on modifying the pelican package (i'm not!) there's not much point installing it in each virtualenv you create.  The 'pelican-quickstart' command will ask you a series of questions and then generate a skeleton blog. Most of the options are in regards to the location the static content will be published, and in my case I keep it on the VPS host, so most of my answers were "n".  
+
+We need to generate some content and test the site out, but we are SOL without a webserver, so lets...
+
+Install NGINX
+-------------
 
