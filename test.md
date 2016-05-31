@@ -16,7 +16,10 @@ Requirements:
 * The blog must be pretty and celean (duh! :P)
 * Static content is a must, no full-fledged CMS
 
-To display line numbers, use a path-less shebang instead of colons:
+With all that in mind, it seems a solution could be found by combining github's webhook feature with a static content generator (Pelican).  Before we do the cool stuff, lets come up with some let's get a basic Pelican blog set up.
+
+Install Pelican
+---------------
 
     #!python
     print("The path-less shebang syntax *will* show line numbers.")
