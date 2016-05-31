@@ -11,6 +11,11 @@ Its been way too long since I've updated my blog, so I decided the old iteration
 
 Requirements:
 
+* an asterisk starts an unordered list
+* and this is another item in the list
++ or you can also use the + character
+- or the - character
+
 * Markdown files uploaded to a github repository trigger content to be added to the site
 * Server must not poll or periodically update the content, but only when new content is pushed
 * The blog must be pretty and celean (duh! :P)
