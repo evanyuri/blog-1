@@ -7,4 +7,4 @@ Slug: my-super-post
 Authors: William Michael Turner
 Summary: Short version for index and feeds
 
-This should be the final test.
+This should be thes final test.
