@@ -8,3 +8,8 @@ Authors: William Michael Turner
 Summary: Short version for index and feeds
 
 This shoulds be thes final test.
+
+To display line numbers, use a path-less shebang instead of colons:
+
+    #!python
+    print("The path-less shebang syntax *will* show line numbers.")
