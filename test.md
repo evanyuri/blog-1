@@ -7,4 +7,4 @@ Slug: my-super-post
 Authors: Alexis Metaireau, Conan Doyle
 Summary: Short version for index and feeds
 
-testing again, and again
+testing again, and again, until the night closes in!
