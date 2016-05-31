@@ -4,7 +4,7 @@ Modified: 2010-12-05 19:30
 Category: Python
 Tags: pelican, publishing
 Slug: my-super-post
-Authors: Alexis Metaireau, Conan Doyle
+Authors: William Michael Turner
 Summary: Short version for index and feeds
 
 testing again, and again, until thasde sdfnight closes in!!!
