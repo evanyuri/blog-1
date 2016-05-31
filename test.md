@@ -42,3 +42,21 @@ We need to generate some content and test the site out, but we are SOL without a
 Install NGINX
 -------------
 
+Apache would work just fine, but I appriciate the clean look of NGINX's config files and reactor model for servicing requests so I went with NGINX.  Lets install it and add a basic config that will serve your new static blog:
+
+    :::bash
+    apt-get install nginx
+    mv /etc/nginx/sites-enabled/default ../sites-available
+    echo "server {
+	listen 80 default_server;
+	listen [::]:80 default_server ipv6only=on;
+
+	root /var/www/blog;
+	index index.html index.htm;
+
+	server_name localhost;
+
+	location / {
+		try_files $uri $uri/ =404;
+	    }
+    }" > /etc/nginx/sites-enabled/blog
