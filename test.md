@@ -7,4 +7,4 @@ Slug: my-super-post
 Authors: William Michael Turner
 Summary: Short version for index and feeds
 
-testing again, and again, until thasde sdfnight closes in!!!
+This should be the final test.
