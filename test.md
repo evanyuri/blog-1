@@ -60,3 +60,30 @@ Apache would work just fine, but I appriciate the clean look of NGINX's config f
 		try_files $uri $uri/ =404;
 	    }
     }" > /etc/nginx/sites-enabled/blog
+    service nginx reload
+    
+Since we can now server content, lets generate some.
+
+Generating content
+------------------
+
+Create a "hello world" post:
+
+    :::bash
+    echo "Title: My super title
+    Date: 2010-12-03 10:20
+    Modified: 2010-12-05 19:30
+    Category: Python
+    Tags: pelican, publishing
+    Slug: my-super-post
+    Authors: Alexis Metaireau, Conan Doyle
+    Summary: Short version for index and feeds
+
+    This is the content of my super blog post." > /opt/blog/site/content
+    cd /opt/blog/site/content
+    pelican
+    ln -s /opt/blog/site/output/ /var/www/blog
+    
+You can now navigate to your hosts IP address or and view your content!  This is great, but so far we have only met one requirement, and it was definitely the low hanging fruit.  So lets move on and automate all the things!
+
+
